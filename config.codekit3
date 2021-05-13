@@ -122,12 +122,52 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/dev\/global\/footer.kit" : {
+    "\/dev\/content\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/global\/footer.html",
+      "oAP" : "\/dev\/content\/footer.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/header.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/header.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/section1.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/section1.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/section2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/section2.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/section3.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/section3.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/section4.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/section4.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
@@ -138,52 +178,12 @@
       "oAP" : "\/dev\/global\/head.html",
       "oF" : 0
     },
-    "\/dev\/global\/header.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/header.html",
-      "oF" : 0
-    },
     "\/dev\/global\/scripts.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/section1.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/section1.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/section2.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/section2.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/section3.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/section3.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/section4.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/section4.html",
       "oF" : 0
     },
     "\/dev\/index.html" : {
@@ -199,8 +199,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/index.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
       "bF" : 0,
