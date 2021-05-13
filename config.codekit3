@@ -70,6 +70,58 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/design\/CWalter_SS-desktop.jpg" : {
+      "ft" : 16384,
+      "iS" : 1468732,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/design\/CWalter_SS-desktop.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/design\/CWalter_SS-desktopHD.jpg" : {
+      "ft" : 16384,
+      "iS" : 1561863,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/design\/CWalter_SS-desktopHD.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/design\/CWalter_SS-mobile.jpg" : {
+      "ft" : 16384,
+      "iS" : 240406,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/design\/CWalter_SS-mobile.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/design\/CWalter_SS-tablet.jpg" : {
+      "ft" : 16384,
+      "iS" : 812961,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/design\/CWalter_SS-tablet.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
