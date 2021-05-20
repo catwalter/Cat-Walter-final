@@ -4,15 +4,78 @@
 #mission-statement {
     
     @include md{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "mission-statement mission-statement mission-statement mission-statement";
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "mission-statement mission-statement mission-statement mission-statement";
     }
 
     @include lg{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "mission-statement mission-statement mission-statement mission-statement";
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "mission-statement mission-statement mission-statement mission-statement";
+    }
+
+    @include xl{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: "mission-statement mission-statement mission-statement mission-statement mission-statement mission-statement";
+    }
+
+    >div {
+        ul {
+            #mission-statement {
+                @include md {
+                    grid-area: mission-statment;
+                }
+            }
+            #s2 {
+                @include md {
+                    grid-area: s2;
+                }
+            }
+            #s3 {
+                @include md {
+                    grid-area: s3;
+                }
+            }
+            #s4 {
+                @include md {
+                    grid-area: s4;
+                }
+            }
+            #s5 {
+                @include md {
+                    grid-area: s5;
+                }
+            }
+            #s6 {
+                @include md {
+                    grid-area: s6;
+                }
+            }
+
+            @include md {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "s2 s2 s2 s2"
+                "s3 s3 s3 s3"
+                "s4 s4 barn-image barn-image"
+                "s5 s5 barn-image barn-image"
+                ". s6 s6 .";
+                gap: 16px;
+            }
+
+            @include xl{
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: 
+                "s2 s2 s2 s2 s2 s2"
+                "s3 s3 s3 s3 s3 s3"
+                "s4 s4 s4 barn-image barn-image barn-image"
+                "s5 s5 s5 barn-image barn-image barn-image"
+                ". s6 S6  s6 s6 .";
+            }
+        }
     }
 
 }
