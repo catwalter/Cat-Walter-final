@@ -1,4 +1,90 @@
 /* =============
     mission statement
 ============= */
-#mission-statement 
+#mission-statement {
+    
+    @include md {
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". mission-statement .";
+    }
+
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+    >div {
+
+        @include md {
+            grid-area: mission-statement;
+        }
+
+        ul {
+
+            #s1 {
+                @include md {
+                    grid-area: s1;
+                }
+            }
+
+            #s2 {
+                @include md {
+                    grid-area: s2;
+                }
+            }
+
+            #s3 {
+                @include md {
+                    grid-area: s3;
+                }
+            }
+
+            #s4 {
+                @include md {
+                    grid-area: s4;
+                }
+            }
+
+            #s5 {
+                @include md {
+                    grid-area: s5;
+                }
+            }
+
+            @include md {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "s1 s1 s2 s2"
+                "s3 s3 barn-image"
+                "s4 s4 barn-image"
+                ". s5 s5 .";
+                gap: 16px;
+            }
+
+            @include lg{
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: 
+                "s1 s1 s2 s2"
+                "s3 s3 barn-image"
+                "s4 s4 barn-image"
+                ". s5 s5 .";
+            }
+
+            li{
+                img {
+                    width: 100%;
+                }
+
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". mission-statement .";
+                    >div{
+                        grid-area: mission-statement;
+                    }
+                }
+            }
+        }
+    }
+}
