@@ -1,81 +1,30 @@
 /* =============
-    mission-statement
+    section-1
 ============= */
-#mission-statement {
- 
+.container {
+    width: 75%;
+    margin: 0 auto;
     
-    @include md{
+    #mission-statement {
+      display: grid;
+      grid-template-areas:
+        "mh"
+        "mi1"
+        "mi2";
+      
+      #mission-heading { grid-area: mh; }
+      #mission-info-1 { grid-area: mi1; }
+      #mission-info-2 {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "mission-statement mission-statement mission-statement mission-statement";
-    }
-
-    @include lg{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "mission-statement mission-statement mission-statement mission-statement";
-    }
-
-    @include xl{
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-areas: "mission-statement mission-statement mission-statement mission-statement mission-statement mission-statement";
-    }
-
-    >div {
-        @include md {
-            grid-area: mission-statment;
+        grid-area: mi2;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+          "mi2-lc mi2-rc";
+        
+        section { grid-area: mi2-lc; }
+        aside { grid-area: mi2-rc; 
+          img { width: 100%; }
         }
-        ul {
-
-            #s2 {
-                @include md {
-                    grid-area: s2;
-                }
-            }
-            #s3 {
-                @include md {
-                    grid-area: s3;
-                }
-            }
-            #s4 {
-                @include md {
-                    grid-area: s4;
-                }
-            }
-            #s5 {
-                @include md {
-                    grid-area: s5;
-                }
-            }
-            #s6 {
-                @include md {
-                    grid-area: s6;
-                }
-            }
-
-            @include md {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-areas: 
-                "s2 s2 s2 s2"
-                "s3 s3 s3 s3"
-                "s4 s4 barn-image barn-image"
-                "s5 s5 barn-image barn-image"
-                ". s6 s6 .";
-                gap: 16px;
-            }
-
-            @include xl{
-                grid-template-columns: repeat(6, 1fr);
-                grid-template-areas: 
-                "s2 s2 s2 s2 s2 s2"
-                "s3 s3 s3 s3 s3 s3"
-                "s4 s4 s4 barn-image barn-image barn-image"
-                "s5 s5 s5 barn-image barn-image barn-image"
-                ". s6 S6  s6 s6 .";
-            }
-        }
+      }
     }
-
-}
+  }
