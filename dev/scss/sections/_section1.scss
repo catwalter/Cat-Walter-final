@@ -2,6 +2,7 @@
     mission-statement
 ============= */
 #mission-statement {
+ 
     
     @include md{
         display: grid;
@@ -22,12 +23,11 @@
     }
 
     >div {
+        @include md {
+            grid-area: mission-statment;
+        }
         ul {
-            #mission-statement {
-                @include md {
-                    grid-area: mission-statment;
-                }
-            }
+
             #s2 {
                 @include md {
                     grid-area: s2;
