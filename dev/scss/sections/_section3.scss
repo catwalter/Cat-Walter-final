@@ -1,0 +1,30 @@
+/* =============
+    section-3
+============= */
+.container-3 {
+    width: 75%;
+    margin: 0 auto;
+    
+    #our-programs {
+      display: grid;
+      grid-template-areas:
+        "op"
+        "op1"
+        "op2";
+      
+      #4h { grid-area: mh; }
+      #our-programs-info-1 { grid-area: mi1; }
+      #our-programs-info-2 {
+        display: grid;
+        grid-area: mi2;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+          "op2-lc op2-rc";
+        
+        section { grid-area: mi2-lc; }
+        aside { grid-area: mi2-rc; 
+          img { width: 100%; }
+        }
+      }
+    }
+  }
