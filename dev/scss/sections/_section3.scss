@@ -21,8 +21,8 @@
         grid-template-areas:
           "op2-lc op2-rc";
         
-        section { grid-area: mi2-lc; }
-        aside { grid-area: mi2-rc; 
+        section { grid-area: op2-lc; }
+        aside { grid-area: op2-rc; 
           img { width: 100%; }
         }
       }
