@@ -12,11 +12,11 @@
         "op1"
         "op2";
       
-      #4h { grid-area: mh; }
-      #our-programs-info-1 { grid-area: mi1; }
+      #our-programs-heading{ grid-area: mh; }
+      #our-programs-info-1 { grid-area: op1; }
       #our-programs-info-2 {
         display: grid;
-        grid-area: mi2;
+        grid-area: op2;
         grid-template-columns: 50% 50%;
         grid-template-areas:
           "op2-lc op2-rc";

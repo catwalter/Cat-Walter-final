@@ -1,0 +1,34 @@
+/* =============
+    section-2
+============= */
+.container-2 {
+    width: 75%;
+    margin: 0 auto;
+    
+    #donations-and-volunteering {
+      display: grid;
+      grid-template-areas:
+        "dv"
+        "dv1"
+        "dv2"
+        "dvb"
+        "dv3";
+      
+      #donations-and-volunteering-header{ grid-area: dv; }
+      #donations-and-volunteering-info-1 { grid-area: dv1; }
+      #donations-and-volunteering-info-2 {
+        display: grid;
+        grid-area: dv2;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+          "dv2-lc dv2-rc";
+        
+        section { grid-area: dv2-lc; }
+        aside { grid-area: dv2-rc; 
+          img { width: 100%; }
+        }
+      }
+      #donations-and-volunteering-button{ grid-area: dvb;}
+      #donations-and-volunteering-info-3{ grid-area: dv3;}
+    }
+  }
