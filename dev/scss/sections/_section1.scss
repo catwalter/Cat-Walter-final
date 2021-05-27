@@ -4,7 +4,7 @@
 .container {
     width: 75%;
     margin: 0 auto;
-    
+   
     #mission-statement {
       display: grid;
       grid-template-areas:
@@ -12,7 +12,12 @@
         "mi1"
         "mi2";
       
-      #mission-heading { grid-area: mh; }
+      #mission-heading { grid-area: mh; 
+      h1 {
+        color: limegreen;
+      }
+    }
+
       #mission-info-1 { grid-area: mi1; }
       #mission-info-2 {
         display: grid;
@@ -28,3 +33,4 @@
       }
     }
   }
+

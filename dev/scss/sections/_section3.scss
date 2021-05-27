@@ -9,7 +9,7 @@
       display: grid;
       grid-template-areas:
         "op"
-        "4h"
+        "fourh"
         "op1"
         "op2"
         "ls"
@@ -17,7 +17,7 @@
         "op4";
       
       #our-programs-heading{ grid-area: op; }
-      #4h{grid-area: 4h;}
+      #fourh {grid-area: fourh;}
       #our-programs-info-1 { grid-area: op1; }
       #our-programs-info-2 {
         display: grid;
