@@ -17,7 +17,7 @@
         "op4";
       
       #our-programs-heading{ grid-area: op; }
-      #4h{grid-area: op;}
+      #4h{grid-area: 4h;}
       #our-programs-info-1 { grid-area: op1; }
       #our-programs-info-2 {
         display: grid;
@@ -30,6 +30,15 @@
         aside { grid-area: op2-rc; 
           img { width: 100%; }
         }
+      }
+      #our-programs-info-3 { grid-area: op3; }
+      #our-programs-info-4 { grid-area: op4; }
+      
+      #op-pics {
+        display: grid;
+        grid-template-areas: 
+        ". i1 i2 i3 ."
+        ". i4 . i5 .";
       }
     }
   }
