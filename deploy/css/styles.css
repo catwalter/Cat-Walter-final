@@ -600,39 +600,39 @@ footer > div ul li a:visited:active {
 /* =============
     section-2
 ============= */
-.container-2 {
+.container2 {
   width: 75%;
   margin: 0 auto;
 }
-.container-2 #donations-and-volunteering {
+.container2 #donations-and-volunteering {
   display: grid;
   grid-template-areas: "dv" "dv1" "dv2" "dvb" "dv3";
 }
-.container-2 #donations-and-volunteering #donations-and-volunteering-header {
+.container2 #donations-and-volunteering #donations-and-volunteering-header {
   grid-area: dv;
 }
-.container-2 #donations-and-volunteering #donations-and-volunteering-info-1 {
+.container2 #donations-and-volunteering #donations-and-volunteering-info-1 {
   grid-area: dv1;
 }
-.container-2 #donations-and-volunteering #donations-and-volunteering-info-2 {
+.container2 #donations-and-volunteering #donations-and-volunteering-info-2 {
   display: grid;
   grid-area: dv2;
   grid-template-columns: 50% 50%;
   grid-template-areas: "dv2-lc dv2-rc";
 }
-.container-2 #donations-and-volunteering #donations-and-volunteering-info-2 section {
+.container2 #donations-and-volunteering #donations-and-volunteering-info-2 section {
   grid-area: dv2-lc;
 }
-.container-2 #donations-and-volunteering #donations-and-volunteering-info-2 aside {
+.container2 #donations-and-volunteering #donations-and-volunteering-info-2 aside {
   grid-area: dv2-rc;
 }
-.container-2 #donations-and-volunteering #donations-and-volunteering-info-2 aside img {
+.container2 #donations-and-volunteering #donations-and-volunteering-info-2 aside img {
   width: 100%;
 }
-.container-2 #donations-and-volunteering #donations-and-volunteering-button {
+.container2 #donations-and-volunteering #donations-and-volunteering-button {
   grid-area: dvb;
 }
-.container-2 #donations-and-volunteering #donations-and-volunteering-info-3 {
+.container2 #donations-and-volunteering #donations-and-volunteering-info-3 {
   grid-area: dv3;
 }
 
