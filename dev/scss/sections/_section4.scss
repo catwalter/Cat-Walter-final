@@ -1,0 +1,25 @@
+/* =============
+    section-4
+============= */
+.container-4 {
+  width: 75%;
+  margin: 20px auto;
+ 
+  #boarding {
+    display: grid;
+    grid-template-areas:
+      "bh"
+      "bi1"
+      "bp1"
+      "bi2"
+      "bp2"
+      "bi3"
+      "bi4";
+    
+    #boarding-heading { grid-area: bh; 
+    h1 {
+      color: limegreen;
+    }
+  }
+  }
+}
