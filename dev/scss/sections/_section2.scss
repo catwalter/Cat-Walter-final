@@ -23,8 +23,8 @@
         grid-template-areas:
           "dv2-lc dv2-rc";
         
-        section { grid-area: lc-dv2; }
-        aside { grid-area: rc-dv2; 
+        section { grid-area: dv2-lc; }
+        aside { grid-area: dv2-rc; 
           img { width: 100%; }
         }
       }

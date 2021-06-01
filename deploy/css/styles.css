@@ -621,10 +621,10 @@ footer > div ul li a:visited:active {
   grid-template-areas: "dv2-lc dv2-rc";
 }
 .container-2 #donations-and-volunteering #donations-and-volunteering-info-2 section {
-  grid-area: lc-dv2;
+  grid-area: dv2-lc;
 }
 .container-2 #donations-and-volunteering #donations-and-volunteering-info-2 aside {
-  grid-area: rc-dv2;
+  grid-area: dv2-rc;
 }
 .container-2 #donations-and-volunteering #donations-and-volunteering-info-2 aside img {
   width: 100%;
