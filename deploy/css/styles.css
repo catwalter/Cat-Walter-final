@@ -364,16 +364,20 @@ body ul li {
     Typography
 ============= */
 body {
-  font-family: "Comfortaa", cursive;
+  font-family: "Comfortaa";
+}
+
+h1 {
+  font-family: "Open Sans", serif;
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0;
+  margin: 10px;
   padding: 0;
 }
 
 p {
-  padding: 0;
+  padding: 5px;
   margin: 0;
 }
 
@@ -680,4 +684,22 @@ footer > div ul li a:visited:active {
 .container-3 #our-programs #op-pics {
   display: grid;
   grid-template-areas: ". i1 i2 i3 ." ". i4 . i5 .";
+}
+
+/* =============
+    section-4
+============= */
+.container-4 {
+  width: 75%;
+  margin: 20px auto;
+}
+.container-4 #boarding {
+  display: grid;
+  grid-template-areas: "bh" "bi1" "bp1" "bi2" "bp2" "bi3" "bi4";
+}
+.container-4 #boarding #boarding-heading {
+  grid-area: bh;
+}
+.container-4 #boarding #boarding-heading h1 {
+  color: limegreen;
 }
