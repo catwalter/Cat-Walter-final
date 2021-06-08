@@ -371,9 +371,13 @@ h1 {
   font-family: "Open Sans", serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1 {
   margin: 10px;
-  padding: 0;
+  padding: 20px;
+  margin-left: -160px;
+  margin-right: -160px;
+  color: white;
+  background-color: #60695C;
 }
 
 p {
@@ -580,7 +584,8 @@ footer > div ul li a:visited:active {
   grid-area: mh;
 }
 .container #mission-statement #mission-heading h1 {
-  color: limegreen;
+  color: #fff;
+  background-color: #60695C;
 }
 .container #mission-statement #mission-info-1 {
   grid-area: mi1;
@@ -683,7 +688,8 @@ footer > div ul li a:visited:active {
 }
 .container-3 #our-programs #op-pics {
   display: grid;
-  grid-template-areas: ". i1 i2 i3 ." ". i4 . i5 .";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "i1 i2 i3" "  14 15  ";
 }
 
 /* =============
