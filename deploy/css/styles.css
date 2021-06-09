@@ -378,9 +378,16 @@ h1 {
   background-color: #60695C;
 }
 
+h2 {
+  color: #4A4D48;
+  font-family: "Helvetica Neue", serif;
+  padding: 0px;
+}
+
 p {
   padding: 5px;
-  margin: 0;
+  margin: 10px;
+  color: #4A4D48;
 }
 
 /* =============
@@ -531,7 +538,7 @@ header > div #nav-container {
     Footer
 ============= */
 footer {
-  background-color: #F8C832;
+  background-color: white;
   display: grid;
   grid-template-areas: ". footer .";
   grid-template-columns: 10px auto 10px;
@@ -650,6 +657,9 @@ footer > div ul li a:visited:active {
   width: 75%;
   margin: 0 auto;
 }
+.container-3 img {
+  align-items: center;
+}
 .container-3 #our-programs {
   display: grid;
   grid-template-areas: "op" "fourh" "op1" "op2" "ls" "op3" "op4";
@@ -684,11 +694,6 @@ footer > div ul li a:visited:active {
 .container-3 #our-programs #our-programs-info-4 {
   grid-area: op4;
 }
-.container-3 #our-programs #op-pics {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "i1 i2 i3" "  14 15  ";
-}
 
 /* =============
     section-4
@@ -703,7 +708,4 @@ footer > div ul li a:visited:active {
 }
 .container-4 #boarding #boarding-heading {
   grid-area: bh;
-}
-.container-4 #boarding #boarding-heading h1 {
-  color: limegreen;
 }
