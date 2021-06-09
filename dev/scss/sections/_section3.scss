@@ -12,6 +12,7 @@
     
     #our-programs {
       display: grid;
+      grid-template-rows: auto;
       grid-template-areas:
         "op"
         "fourh"
@@ -19,7 +20,8 @@
         "op2"
         "ls"
         "op3"
-        "op4";
+        "op4"
+        "opics";
       
       #our-programs-heading{ grid-area: op; }
     
@@ -40,6 +42,12 @@
       #our-programs-info-3 { grid-area: op3; }
       #our-programs-info-4 { grid-area: op4; }
       
+      #op-pics {
+        grid-area: opics;
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: auto auto auto;
+      }
      
     }
   }

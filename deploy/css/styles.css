@@ -662,7 +662,8 @@ footer > div ul li a:visited:active {
 }
 .container-3 #our-programs {
   display: grid;
-  grid-template-areas: "op" "fourh" "op1" "op2" "ls" "op3" "op4";
+  grid-template-rows: auto;
+  grid-template-areas: "op" "fourh" "op1" "op2" "ls" "op3" "op4" "opics";
 }
 .container-3 #our-programs #our-programs-heading {
   grid-area: op;
@@ -693,6 +694,12 @@ footer > div ul li a:visited:active {
 }
 .container-3 #our-programs #our-programs-info-4 {
   grid-area: op4;
+}
+.container-3 #our-programs #op-pics {
+  grid-area: opics;
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-columns: auto auto auto;
 }
 
 /* =============
