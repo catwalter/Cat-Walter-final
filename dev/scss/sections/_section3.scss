@@ -4,11 +4,6 @@
 .container-3 {
     width: 75%;
     margin: 0 auto;
-
-
-    img {
-      align-items: center;
-    }
     
     #our-programs {
       display: grid;
@@ -41,13 +36,39 @@
       }
       #our-programs-info-3 { grid-area: op3; }
       #our-programs-info-4 { grid-area: op4; }
-      
-      #op-pics {
-        grid-area: opics;
-        display: grid;
-        grid-template-rows: 2;
-        grid-template-columns: auto auto auto;
+
+      .column {
+        float: left;
+        width: 32.3%;
+        padding: 5px;
+        justify-content: center;
       }
-     
+      
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .column {
+        float: left;
+        width: 32.3%;
+        padding: 5px;
+        justify-content: center;
+      }
+      
+      /* Clear floats after image containers */
+      .row2::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .column {
+        width: 100%;
+      }
     }
   }

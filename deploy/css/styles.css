@@ -468,70 +468,17 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  background-color: #fff;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
+.Solly-Stables {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-header > div {
-  display: grid;
-  grid-template-areas: "burger survival" "nav nav";
-  grid-template-columns: 20% auto;
-}
-@media (min-width: 1024px) {
-  header > div {
-    grid-template-areas: "nav survival";
-    grid-template-columns: 20% auto;
-  }
-}
-header > div #button-container {
-  grid-area: survival;
-  padding: 10px;
-  text-align: right;
-}
-header > div #button-container button {
-  background-color: #F8C832;
-  border-radius: 23px;
-  color: #000;
-  display: inline-block;
-  font-size: 1.125rem;
-  font-weight: 700;
-  padding: 10px 20px;
-  border: none;
-  transition: 0.25s;
-}
-header > div #button-container button:hover {
-  background-color: #000;
-  color: #fff;
-}
-header > div #burger-container {
-  align-items: center;
-  display: flex;
-  grid-area: burger;
-  padding: 10px;
-}
-@media (min-width: 1024px) {
-  header > div #burger-container {
-    display: none !important;
-  }
-}
-header > div #burger-container i {
-  cursor: pointer;
-  font-size: 1.875rem;
-}
-header > div #nav-container {
-  background-color: #222222;
-  display: none;
-  grid-area: nav;
-  padding: 20px 10px 10px;
-}
-@media (min-width: 1024px) {
-  header > div #nav-container {
-    background-color: #fff;
-    display: block !important;
-  }
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 /* =============
@@ -584,6 +531,7 @@ footer > div ul li a:visited:active {
 .container #mission-statement {
   display: grid;
   grid-template-areas: "mh" "mi1" "mi2";
+  text-align: left;
 }
 .container #mission-statement #mission-heading {
   grid-area: mh;
@@ -657,13 +605,12 @@ footer > div ul li a:visited:active {
   width: 75%;
   margin: 0 auto;
 }
-.container-3 img {
-  align-items: center;
-}
 .container-3 #our-programs {
   display: grid;
   grid-template-rows: auto;
   grid-template-areas: "op" "fourh" "op1" "op2" "ls" "op3" "op4" "opics";
+  /* Clear floats after image containers */
+  /* Clear floats after image containers */
 }
 .container-3 #our-programs #our-programs-heading {
   grid-area: op;
@@ -695,11 +642,32 @@ footer > div ul li a:visited:active {
 .container-3 #our-programs #our-programs-info-4 {
   grid-area: op4;
 }
-.container-3 #our-programs #op-pics {
-  grid-area: opics;
-  display: grid;
-  grid-template-rows: 2;
-  grid-template-columns: auto auto auto;
+.container-3 #our-programs .column {
+  float: left;
+  width: 32.3%;
+  padding: 5px;
+  justify-content: center;
+}
+.container-3 #our-programs .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container-3 #our-programs .column {
+  float: left;
+  width: 32.3%;
+  padding: 5px;
+  justify-content: center;
+}
+.container-3 #our-programs .row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 500px) {
+  .container-3 .column {
+    width: 100%;
+  }
 }
 
 /* =============
