@@ -17,5 +17,20 @@
       "bi4";
     
     #boarding-heading { grid-area: bh;}
+
+    img {float: center};
+  }
+
+  @include md {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+
+  @include lg {
+    grid-template-columns: 50% auto;
+  }
+
+  @include xl {
+  grid-template-columns: 16px 480px auto;
   }
 }

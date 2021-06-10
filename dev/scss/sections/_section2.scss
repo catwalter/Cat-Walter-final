@@ -1,7 +1,7 @@
 /* =============
     section-2
 ============= */
-.container2 {
+.container {
   width: 75%;
   margin: 0 auto;
   
@@ -10,26 +10,44 @@
     grid-template-areas:
       "dv"
       "dv1"
-      "dv2"
-      "dvb"
-      "dv3";
-    
-    #donations-and-volunteering-header{ grid-area: dv;}
+      "dv2";
 
-    #donations-and-volunteering-info-1 { grid-area: dv1; }
-    #donations-and-volunteering-info-2 {
-      display: grid;
-      grid-area: dv2;
-      grid-template-columns: 50% 50%;
-      grid-template-areas:
-        "dv2-lc dv2-rc";
-      
-      section { grid-area: dv2-lc; }
-      aside { grid-area: dv2-rc; 
-        img { width: 100%; }
+      text-align: left;
+    
+    #donations-and-volunteering-heading {grid-area: dv;
+    h1 {
+      color: #fff;
+      background-color: #60695C;
       }
     }
-    #donations-and-volunteering-button{ grid-area: dvb;}
-    #donations-and-volunteering-info-3{ grid-area: dv3;}
+
+    #donations-and-volunteering-info1 {
+      display: grid;
+      grid-area: dv1;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: 
+        "dv1-lc dv1-rc";
+
+        section { grid-area: dv1-lc; }
+        aside { grid-area: dv1-rc; 
+          img { width: 100%; }
+        }
+    }
+
+    #donations-and-volunteering-info-2 {grid-area: dv2;}
   }
+
+  @include md {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+
+  @include lg {
+    grid-template-columns: 50% auto;
+  }
+
+  @include xl {
+  grid-template-columns: 16px 480px auto;
+  }
+
 }

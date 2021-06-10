@@ -1,9 +1,12 @@
 /* =============
     section-3
 ============= */
-.container-3 {
+.container {
     width: 75%;
     margin: 0 auto;
+
+    text-align: left;
+    
     
     #our-programs {
       display: grid;
@@ -19,7 +22,9 @@
         "opics";
       
       #our-programs-heading{ grid-area: op; }
-    
+
+      img {float: right;}
+
       #fourh {grid-area: fourh;}
       #our-programs-info-1 { grid-area: op1; }
       #our-programs-info-2 {
@@ -73,9 +78,18 @@
       }
     }
 
-    @media screen and (max-width: 500px) {
-      .column {
-        width: 100%;
-      }
+    @include md {
+      display: grid;
+      grid-template-columns: 40% auto;
     }
+  
+    @include lg {
+      grid-template-columns: 50% auto;
+    }
+  
+    @include xl {
+    grid-template-columns: 16px 480px auto;
+    }
+
+    
   }

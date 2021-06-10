@@ -558,121 +558,167 @@ footer > div ul li a:visited:active {
 .container #mission-statement #mission-info-2 aside img {
   width: 100%;
 }
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    grid-template-columns: 16px 480px auto;
+  }
+}
 
 /* =============
     section-2
 ============= */
-.container2 {
+.container {
   width: 75%;
   margin: 0 auto;
 }
-.container2 #donations-and-volunteering {
+.container #donations-and-volunteering {
   display: grid;
-  grid-template-areas: "dv" "dv1" "dv2" "dvb" "dv3";
+  grid-template-areas: "dv" "dv1" "dv2";
+  text-align: left;
 }
-.container2 #donations-and-volunteering #donations-and-volunteering-header {
+.container #donations-and-volunteering #donations-and-volunteering-heading {
   grid-area: dv;
 }
-.container2 #donations-and-volunteering #donations-and-volunteering-info-1 {
-  grid-area: dv1;
+.container #donations-and-volunteering #donations-and-volunteering-heading h1 {
+  color: #fff;
+  background-color: #60695C;
 }
-.container2 #donations-and-volunteering #donations-and-volunteering-info-2 {
+.container #donations-and-volunteering #donations-and-volunteering-info1 {
   display: grid;
-  grid-area: dv2;
+  grid-area: dv1;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "dv2-lc dv2-rc";
+  grid-template-areas: "dv1-lc dv1-rc";
 }
-.container2 #donations-and-volunteering #donations-and-volunteering-info-2 section {
-  grid-area: dv2-lc;
+.container #donations-and-volunteering #donations-and-volunteering-info1 section {
+  grid-area: dv1-lc;
 }
-.container2 #donations-and-volunteering #donations-and-volunteering-info-2 aside {
-  grid-area: dv2-rc;
+.container #donations-and-volunteering #donations-and-volunteering-info1 aside {
+  grid-area: dv1-rc;
 }
-.container2 #donations-and-volunteering #donations-and-volunteering-info-2 aside img {
+.container #donations-and-volunteering #donations-and-volunteering-info1 aside img {
   width: 100%;
 }
-.container2 #donations-and-volunteering #donations-and-volunteering-button {
-  grid-area: dvb;
+.container #donations-and-volunteering #donations-and-volunteering-info-2 {
+  grid-area: dv2;
 }
-.container2 #donations-and-volunteering #donations-and-volunteering-info-3 {
-  grid-area: dv3;
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    grid-template-columns: 16px 480px auto;
+  }
 }
 
 /* =============
     section-3
 ============= */
-.container-3 {
+.container {
   width: 75%;
   margin: 0 auto;
+  text-align: left;
 }
-.container-3 #our-programs {
+.container #our-programs {
   display: grid;
   grid-template-rows: auto;
   grid-template-areas: "op" "fourh" "op1" "op2" "ls" "op3" "op4" "opics";
   /* Clear floats after image containers */
   /* Clear floats after image containers */
 }
-.container-3 #our-programs #our-programs-heading {
+.container #our-programs #our-programs-heading {
   grid-area: op;
 }
-.container-3 #our-programs #fourh {
+.container #our-programs img {
+  float: right;
+}
+.container #our-programs #fourh {
   grid-area: fourh;
 }
-.container-3 #our-programs #our-programs-info-1 {
+.container #our-programs #our-programs-info-1 {
   grid-area: op1;
 }
-.container-3 #our-programs #our-programs-info-2 {
+.container #our-programs #our-programs-info-2 {
   display: grid;
   grid-area: op2;
   grid-template-columns: 50% 50%;
   grid-template-areas: "op2-lc op2-rc";
 }
-.container-3 #our-programs #our-programs-info-2 section {
+.container #our-programs #our-programs-info-2 section {
   grid-area: op2-lc;
 }
-.container-3 #our-programs #our-programs-info-2 aside {
+.container #our-programs #our-programs-info-2 aside {
   grid-area: op2-rc;
 }
-.container-3 #our-programs #our-programs-info-2 aside img {
+.container #our-programs #our-programs-info-2 aside img {
   width: 100%;
 }
-.container-3 #our-programs #our-programs-info-3 {
+.container #our-programs #our-programs-info-3 {
   grid-area: op3;
 }
-.container-3 #our-programs #our-programs-info-4 {
+.container #our-programs #our-programs-info-4 {
   grid-area: op4;
 }
-.container-3 #our-programs .column {
+.container #our-programs .column {
   float: left;
   width: 32.3%;
   padding: 5px;
   justify-content: center;
 }
-.container-3 #our-programs .row::after {
+.container #our-programs .row::after {
   content: "";
   clear: both;
   display: table;
 }
-.container-3 #our-programs .column {
+.container #our-programs .column {
   float: left;
   width: 32.3%;
   padding: 5px;
   justify-content: center;
 }
-.container-3 #our-programs .row2::after {
+.container #our-programs .row2::after {
   content: "";
   clear: both;
   display: table;
 }
-.container-3 #our-programs .center {
+.container #our-programs .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-@media screen and (max-width: 500px) {
-  .container-3 .column {
-    width: 100%;
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    grid-template-columns: 16px 480px auto;
   }
 }
 
@@ -689,4 +735,23 @@ footer > div ul li a:visited:active {
 }
 .container-4 #boarding #boarding-heading {
   grid-area: bh;
+}
+.container-4 #boarding img {
+  float: center;
+}
+@media (min-width: 768px) {
+  .container-4 {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  .container-4 {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container-4 {
+    grid-template-columns: 16px 480px auto;
+  }
 }
