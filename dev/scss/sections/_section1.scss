@@ -57,8 +57,4 @@
     grid-template-columns: 50% auto;
   }
 
-  @include xl {
-    grid-template-columns: 16px 480px auto;
-  }
-
 }
