@@ -736,9 +736,6 @@ footer > div ul li a:visited:active {
 .container-4 #boarding #boarding-heading {
   grid-area: bh;
 }
-.container-4 #boarding img {
-  float: center;
-}
 @media (min-width: 768px) {
   .container-4 {
     display: grid;

@@ -4,7 +4,7 @@
 .container-4 {
   width: 75%;
   margin: 20px auto;
- 
+
   #boarding {
     display: grid;
     grid-template-areas:
@@ -15,10 +15,12 @@
       "bp2"
       "bi3"
       "bi4";
-    
-    #boarding-heading { grid-area: bh;}
 
-    img {float: center};
+    #boarding-heading {
+      grid-area: bh;
+    }
+
+
   }
 
   @include md {
@@ -31,6 +33,6 @@
   }
 
   @include xl {
-  grid-template-columns: 16px 480px auto;
+    grid-template-columns: 16px 480px auto;
   }
 }

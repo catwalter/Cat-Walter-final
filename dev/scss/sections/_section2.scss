@@ -4,7 +4,7 @@
 .container {
   width: 75%;
   margin: 0 auto;
-  
+
   #donations-and-volunteering {
     display: grid;
     grid-template-areas:
@@ -12,12 +12,14 @@
       "dv1"
       "dv2";
 
-      text-align: left;
-    
-    #donations-and-volunteering-heading {grid-area: dv;
-    h1 {
-      color: #fff;
-      background-color: #60695C;
+    text-align: left;
+
+    #donations-and-volunteering-heading {
+      grid-area: dv;
+
+      h1 {
+        color: #fff;
+        background-color: #60695C;
       }
     }
 
@@ -25,16 +27,25 @@
       display: grid;
       grid-area: dv1;
       grid-template-columns: 50% 50%;
-      grid-template-areas: 
+      grid-template-areas:
         "dv1-lc dv1-rc";
 
-        section { grid-area: dv1-lc; }
-        aside { grid-area: dv1-rc; 
-          img { width: 100%; }
+      section {
+        grid-area: dv1-lc;
+      }
+
+      aside {
+        grid-area: dv1-rc;
+
+        img {
+          width: 100%;
         }
+      }
     }
 
-    #donations-and-volunteering-info-2 {grid-area: dv2;}
+    #donations-and-volunteering-info-2 {
+      grid-area: dv2;
+    }
   }
 
   @include md {
@@ -47,7 +58,7 @@
   }
 
   @include xl {
-  grid-template-columns: 16px 480px auto;
+    grid-template-columns: 16px 480px auto;
   }
 
 }

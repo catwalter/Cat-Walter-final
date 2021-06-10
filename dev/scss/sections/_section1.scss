@@ -2,52 +2,63 @@
     section-1
 ============= */
 .container {
-    width: 75%;
-    margin: 0 auto;
-   
-    #mission-statement {
-      display: grid;
-      grid-template-areas:
-        "mh"
-        "mi1"
-        "mi2";
+  width: 75%;
+  margin: 0 auto;
 
-      text-align: left;
-      
-      #mission-heading { grid-area: mh; 
+  #mission-statement {
+    display: grid;
+    grid-template-areas:
+      "mh"
+      "mi1"
+      "mi2";
+
+    text-align: left;
+
+    #mission-heading {
+      grid-area: mh;
+
       h1 {
         color: #fff;
         background-color: #60695C;
       }
     }
 
-      #mission-info-1 { grid-area: mi1; }
-      #mission-info-2 {
-        display: grid;
-        grid-area: mi2;
-        grid-template-columns: 50% 50%;
-        grid-template-areas:
-          "mi2-lc mi2-rc";
-        
-        section { grid-area: mi2-lc; }
-        aside { grid-area: mi2-rc; 
-          img { width: 100%; }
+    #mission-info-1 {
+      grid-area: mi1;
+    }
+
+    #mission-info-2 {
+      display: grid;
+      grid-area: mi2;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+        "mi2-lc mi2-rc";
+
+      section {
+        grid-area: mi2-lc;
+      }
+
+      aside {
+        grid-area: mi2-rc;
+
+        img {
+          width: 100%;
         }
       }
     }
+  }
 
-    @include md {
-      display: grid;
-      grid-template-columns: 40% auto;
+  @include md {
+    display: grid;
+    grid-template-columns: 40% auto;
   }
 
   @include lg {
-      grid-template-columns: 50% auto;
+    grid-template-columns: 50% auto;
   }
 
   @include xl {
     grid-template-columns: 16px 480px auto;
   }
 
-  }
-
+}

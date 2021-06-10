@@ -2,94 +2,117 @@
     section-3
 ============= */
 .container {
-    width: 75%;
-    margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
 
-    text-align: left;
-    
-    
-    #our-programs {
+  text-align: left;
+
+
+  #our-programs {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "op"
+      "fourh"
+      "op1"
+      "op2"
+      "ls"
+      "op3"
+      "op4"
+      "opics";
+
+    #our-programs-heading {
+      grid-area: op;
+    }
+
+    img {
+      float: right;
+    }
+
+    #fourh {
+      grid-area: fourh;
+    }
+
+    #our-programs-info-1 {
+      grid-area: op1;
+    }
+
+    #our-programs-info-2 {
       display: grid;
-      grid-template-rows: auto;
+      grid-area: op2;
+      grid-template-columns: 50% 50%;
       grid-template-areas:
-        "op"
-        "fourh"
-        "op1"
-        "op2"
-        "ls"
-        "op3"
-        "op4"
-        "opics";
-      
-      #our-programs-heading{ grid-area: op; }
+        "op2-lc op2-rc";
 
-      img {float: right;}
+      section {
+        grid-area: op2-lc;
+      }
 
-      #fourh {grid-area: fourh;}
-      #our-programs-info-1 { grid-area: op1; }
-      #our-programs-info-2 {
-        display: grid;
-        grid-area: op2;
-        grid-template-columns: 50% 50%;
-        grid-template-areas:
-          "op2-lc op2-rc";
-        
-        section { grid-area: op2-lc; }
-        aside { grid-area: op2-rc; 
-          img { width: 100%; }
+      aside {
+        grid-area: op2-rc;
+
+        img {
+          width: 100%;
         }
       }
-      #our-programs-info-3 { grid-area: op3; }
-      #our-programs-info-4 { grid-area: op4; }
-
-      .column {
-        float: left;
-        width: 32.3%;
-        padding: 5px;
-        justify-content: center;
-      }
-      
-      /* Clear floats after image containers */
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
-      .column {
-        float: left;
-        width: 32.3%;
-        padding: 5px;
-        justify-content: center;
-      }
-      
-      /* Clear floats after image containers */
-      .row2::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
     }
 
-    @include md {
-      display: grid;
-      grid-template-columns: 40% auto;
-    }
-  
-    @include lg {
-      grid-template-columns: 50% auto;
-    }
-  
-    @include xl {
-    grid-template-columns: 16px 480px auto;
+    #our-programs-info-3 {
+      grid-area: op3;
     }
 
-    
+    #our-programs-info-4 {
+      grid-area: op4;
+    }
+
+    .column {
+      float: left;
+      width: 32.3%;
+      padding: 5px;
+      justify-content: center;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .column {
+      float: left;
+      width: 32.3%;
+      padding: 5px;
+      justify-content: center;
+    }
+
+    /* Clear floats after image containers */
+    .row2::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
   }
+
+  @include md {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+
+  @include lg {
+    grid-template-columns: 50% auto;
+  }
+
+  @include xl {
+    grid-template-columns: 16px 480px auto;
+  }
+
+
+}
